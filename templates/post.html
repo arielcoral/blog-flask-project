@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+ <!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://images.pexels.com/photos/17485847/pexels-photo-17485847/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-ways-in-which-ai-can-help-compress-videos-and-increase-efficiency-for-users-it-was-created-by-vincent-s.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>{{ hpost["title"] }}</h1>
+                            <h2 class="subheading">{{ hpost["subtitle"] }}</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on {{ hpost["date"] }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>{{ hpost["body"] }}</p>
+                        <a href="#!"><img class="img-fluid" src="{{ hpost['image'] }}" alt="post image" /></a>
+                            Placeholder text by
+                            <a href="http://spacepisum.com/">Space Ipsum</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+{% include 'footer.html' %}
